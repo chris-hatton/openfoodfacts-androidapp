@@ -1,5 +1,93 @@
 # Changelog
 
+## [3.9.0](https://github.com/chris-hatton/openfoodfacts-androidapp/compare/v3.8.0...v3.9.0) (2022-06-13)
+
+
+### Features
+
+* Add simple scan feature ([#4236](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4236)) ([dd59827](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/dd598272e6c32da7a816dabcaad2480ea1887591))
+* Automatically label issues ([#4524](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4524)) ([c46bc42](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/c46bc42030ec8f1cf184f762ef4fe9d97893c768))
+* disable sentry if user does not grant anonymous metric collection ([#4339](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4339)) ([0ab43cd](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/0ab43cd85392126891268b02a63b0a2ca67bede7))
+* export DB ([#4719](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4719)) ([694b56f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/694b56f6f9a3d4f4c1a9d9f99fb87236a91856ce))
+* implemented SearchComplete ([b33dadb](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/b33dadbdf81ca4b210e3d03fdbab981a881d4c2e))
+* Scan tile (quick settings) ([#4603](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4603)) ([84d2ff6](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/84d2ff6e039212aed971ddd0ddb8fedda7c4df8b))
+* The Activity now notifies when the drawer status has changed ([#4560](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4560)) ([ef12188](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ef12188100cd6478c1de391b88695619f43cc4de))
+* use JDK 11 in detekt workflow ([7787aef](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7787aef14a360aca7733c20ba84987383c6f1f60))
+
+
+### Bug Fixes
+
+* "No nutrition facts" switch not working as intended ([#4583](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4583)) ([0c26ad1](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/0c26ad1209e4201302dee2006a1869f231613d66))
+* "Search for a food category" hint hardcoded ([#4539](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4539)) ([5050cf1](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/5050cf1d95929b90a3660b17bdbbc63f3a9a569f))
+* [#4546](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4546) Fixed sign up and password background buttons ([#4564](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4564)) ([d1adb55](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/d1adb55177331dede03f58eca34075de313229d7))
+* add exception to per100gInUnit and perServingInUnit in ProductNutriment ([783ba34](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/783ba3431088b8d07f8ef792c0c1875e7058f295))
+* added contrast to matomo slide ([5825414](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/5825414c4cc96ea19604cc58f5ba7cbf8c7911cc))
+* AllergenTest ([#4146](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4146)) ([ccd5da9](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ccd5da9e6623a678d555d006dfcdc00d34628ddf))
+* Attempt to fix NPE: interface method 'java.lang.Object java.util.Map.get(java.lang.Object) ([#4496](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4496)) ([29f17a9](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/29f17a9b1db3df3fff364375dec6a1c09465fe6a))
+* Attempting to launch an unregistered ActivityResultLauncher ([51f7767](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/51f7767dfb7cee388f9b8b4a4e79e14c5f71c363))
+* Barcode scanner: No visual cues for icons on top of the screen ([#4573](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4573)) ([b82697f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/b82697f4eb5c5dcbd186cfa826443bf1c2a4a2b8))
+* categories did not have a link in CategoryProductHelper.kt ([84bfb42](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/84bfb428eabe486e3eda5c15f8b1aa54fc6d2c39))
+* change default name for lists ([#4616](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4616)) ([7b56644](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7b56644fb2df46c13b2a398d5d08dbfc2d35b853))
+* changing the OS locale doesn't change the app locale ([#4323](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4323)) ([965b4ba](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/965b4bad4939da7d2d39534b6ca0a9fba9f4c0a3))
+* compare button click ([#4147](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4147)) ([15d1498](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/15d14985efdce5a0751f0bd91b9d25302ba04af7))
+* delete wrong translations & fix null error ([#4501](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4501)) ([1bf2517](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/1bf25172650112172b2d6c99a5fcb980901d85a1))
+* disable CSV import for older android versions ([c06c049](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/c06c049640c057d34b83fda8a5ecfae77ae86755))
+* disable serving size field if fetched value is wrong ([43b933f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/43b933f5193fa666daff46be05ec0b110a54f2a4))
+* display analysis tags always in the same order in Summary Product Fragment ([7cdea9c](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7cdea9c4f1da30ff5c7f7a1699d247ec1a1d04f3))
+* do not access binding if cancelled ([185b559](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/185b5599e4a33fb55d04dd5ab4a03c924fcad09a))
+* do not concatenate labels without separators ([d24907c](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/d24907c785afd3ba0fc14dcad8f2953c1450bd2e))
+* do not update products when history is empty ([20f8a03](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/20f8a038bf6e78ec134574a6dd2b084dfbe83315))
+* editing in allergens alert screen ([#4215](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4215)) ([9ae13b6](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/9ae13b61f81f3f87507550ebeef85ec8887b8a88))
+* environment picture issues ([#4655](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4655)) ([7bf62d8](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7bf62d8413205ec0f3e5ed3e70cdf4c9adb24280))
+* error in value per 100g parsing ([f0e4a28](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/f0e4a28d9248f79cbdc2e19616224a6c4bde7ff3))
+* fixed isBarcodeValid method in ProductUtilsTest.kt ([5025f55](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/5025f55d72383d44be758a43f09c7eec1b2f0de1))
+* fixed NPE in ProductEditNutritionFactsFragment.kt ([ecc5047](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ecc504779d6b0a586436dc140690bceb6ee77dea))
+* fixed ProductsAPITest.kt ([97653bd](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/97653bd4c586630e5c1d6c4e2791e59347f08d9f))
+* labels are not rendered as links in SummaryProductFragment.kt ([c4a5314](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/c4a5314a3078434a9fbfdd856a3bc78d94649505))
+* lint issues ([#4519](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4519)) ([6ca3cde](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/6ca3cde74819c722708d1b1ae110417ab1b2a55d))
+* Login screen: the login button should not be disabled directly, as a dedicated method (updateLoginButtonState) already handles all the error/loading… cases ([#4531](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4531)) ([96d0fe0](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/96d0fe06e80ee2149adefdb19668ff2984596d52))
+* made tag-line method suspend ([462397f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/462397fd2ef6711b1da1ac65228ae9ed99eba6c1))
+* make toast in main context ([03f504f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/03f504fa54b65f271c7b9537c22408ea81c0e647))
+* not working language selection  ([#4192](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4192)) ([7caa086](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7caa0866f765c26505df96712b8db9a9687b4e85))
+* NPE ([d54533f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/d54533fb10b40e151e149b8964def5f98b189186))
+* NPE at ProductSearchActivity ([8bd9aee](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/8bd9aee102998cc0755fba5def0e68db89fa4891))
+* NPE crash on SearchByCodeFragment ([#4652](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4652)) ([53f79aa](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/53f79aa4cd20e17845dc2e6c02822eb740476359))
+* NPE for null binding ([#4629](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4629)) ([c4eaba8](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/c4eaba8adbdf1400068d63cb44cb82ff3036683e))
+* NPE in EditOverviewFragment ([#4298](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4298)) ([94df3cc](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/94df3ccb80ea8b42e24a065185ab13876d35c965))
+* NPE in PhotoReceiverHandler.kt ([1783857](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/1783857ea2a9aa68a1171cd89a76462a9ef28518))
+* NPE in ProductCompareAdapter ([#4631](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4631)) ([7ef7b94](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7ef7b94eb290cdc31e07a54b02400e914217037e))
+* NPE in ProductEditActivity#getUpdatedFieldsMap ([0ff12f6](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/0ff12f6e68dc57dcf83c7c971c94ccb30d2f0281))
+* NPE in ProductListAdapter ([#4469](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4469)) ([3af2973](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/3af29736e8c1ad586a379b5126eadd611b3a0763))
+* NPE in refreshProductCount on HomeFragment ([#4237](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4237)) ([40a8f2d](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/40a8f2d96aa01cffb69bdef0c5f7bf2c003fbd9e))
+* NPE in WikidataAPIClient ([ec8a0da](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ec8a0da784a81a2d0c223c2652ae4340f0abe025))
+* product сomparison ([#4177](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4177)) ([76e189e](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/76e189e39e3ea37e7b7639ad744025d20b131ed1))
+* properties order in AnalysisTag Entity ([1111c73](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/1111c735681589ac9937f488d522796f8d1a0545))
+* refactored measurements inner working ([#4171](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4171)) ([ba334af](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ba334af496d6017c7e33afae60cb94521a925d32))
+* remove runBlocking in ProductListAdapter.kt ([bc2d218](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/bc2d2183cfe644d7e6c9b06b646ab0d53422afaa))
+* remove runBlocking in ProductListAdapter.kt ([7c195cf](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/7c195cf36f3c835998627e7f71087bd926ffc0de))
+* replace NPE with ISE ([b8c0d5c](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/b8c0d5c5caeb15f3b22de80a9f0d18540e54322f))
+* replaced launch with launchWhenResumed in SummaryProductFragment ([a6b3161](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/a6b316160c1f35a2f74ed8d7a9b932fe780f6199))
+* Revent to Eaten products ([#4702](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4702)) ([cfca5f4](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/cfca5f4ea6d75e10fa2201cd0afcd9754c0d1e75))
+* robotoff should not make the app crash if unavailable ([#4464](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4464)) ([70d4e09](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/70d4e0984045c2ec7f2af28506255bd13ecb7bbc))
+* show language name in picker for product edit screen ([#4149](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4149)) ([1717394](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/1717394b2bdc7ac709bbe4f9856d2a32be8b9da3))
+* show tagline in HomeFragment ([ad45456](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/ad45456696d15c0c5c93f032638659cf165790bf))
+* temporary fix for URI blocking issue. ([5e3322f](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/5e3322fe7350d5c866ed7405c18e8e1a58ebf1e8))
+* try to fix an exception with adding a product from other screens ([cfbb21e](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/cfbb21e7579e658d2c2dfbe4d9a2c28156ff258e))
+* type errors with new deps ([d8f8a30](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/d8f8a3065c34b89fc5e73470936b7ddafff4040f))
+* typo in variable usage in EditIngredientsFragment.kt ([389bf33](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/389bf33a2894672e82ee6e3358da17042dfcdaa1))
+* use resource for "State" subtitle in ProductSearchActivity.kt ([32add9a](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/32add9a4224ff069bbf25c9df7dd6a687d109bd7))
+* use runBlocking in retrieveAll_Success ([32dd869](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/32dd8693998975a05204739d3253e50bf5ec33d8))
+* Useless swipe to refresh with an empty product ([#4608](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4608)) ([4befba4](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/4befba444ea6ff3d3df4813e7aa50a73d6c29970))
+* When no further fragment is visible, the app should close itself ([#4322](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4322)) ([8ae0954](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/8ae095459e45d8dbebe3e243a5968b983fbf565a)), closes [#4320](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4320)
+* When nutriscore is not (yet) computed, hide the "Learn more" button ([#4657](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4657)) ([a17ddb9](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/a17ddb983e06b454968989be2088fd4a8a9ec3bf))
+* workaround for NPE in ImagesManageActivity.kt ([fed1f54](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/fed1f541064a4f0c8621aca75b4508909658b8fe))
+* wrong number of products for lists + analytics events ([#4648](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4648)) ([c7438bb](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/c7438bbdb17dd5080c222566b6d896e0d28a65b7))
+
+
+### Reverts
+
+* try to make things work ([#4508](https://github.com/chris-hatton/openfoodfacts-androidapp/issues/4508)) ([f17cf09](https://github.com/chris-hatton/openfoodfacts-androidapp/commit/f17cf0974faaeebec6df761db1660a8a53dfb382))
+
 ## [3.8.0](https://github.com/openfoodfacts/openfoodfacts-androidapp/compare/v3.7.0...v3.8.0) (2022-02-09)
 
 
