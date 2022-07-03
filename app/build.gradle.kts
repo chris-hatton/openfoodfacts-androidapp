@@ -34,6 +34,9 @@ fun obtainTestBuildType(): String {
 }
 
 dependencies {
+
+    project(":api")
+
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib:${rootProject.extra["kotlinVersion"]}")
 

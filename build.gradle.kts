@@ -43,6 +43,8 @@ buildscript {
 plugins {
     id("org.sonarqube") version "3.4.0.2513"
     id("io.gitlab.arturbosch.detekt") version "1.20.0"
+    id("com.android.library") version "7.2.1" apply false
+    id("org.jetbrains.kotlin.android") version "1.7.0" apply false
 }
 
 allprojects {
